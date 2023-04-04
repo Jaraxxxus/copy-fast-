@@ -1,16 +1,16 @@
 button{
-    position: absolute;
-    right: 12px;
-    top: 6px;
-    padding: 0.5em;
-    background: #ffcc00;
-    color: black;
-    border: none;
-    border-radius: 3px;
-    transition: background 0.15 ease-in-out;
-    font-family: monospace;
+    position: absolute !important;
+    right: 12px !important;
+    top: 6px !important;
+    padding: 0.5em !important;
+    background: #ffcc00 !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 3px !important;
+    transition: background 0.15 ease-in-out !important;
+    font-family: monospace !important;
 }
 
 button:hover{
-    background: #e2b603;
+    background: #e2b603 !important;
 }

@@ -6,7 +6,9 @@ const preEls = document.querySelectorAll('pre');
     root.style.position = "relative";
     const shadowRoot = root.attachShadow({mode : 'open'});
 
-    const cssUrl = chrome.runtime.getURL("contentscript.css");
+    const cssUrl = typeof browser === 'undefined'
+        ? chrome.runtime.getURL("contentscript.css")
+        : browser.runtime.getURL("contentscript.css");
 
     shadowRoot.innerHTML = '<link rel="stylesheet" type="text/css" href="' + cssUrl + '"></link>';
 
